@@ -1,5 +1,5 @@
 //     Zepto.js
-//     (c) 2010-2014 Thomas Fuchs
+//     (c) 2010-2015 Thomas Fuchs
 //     Zepto.js may be freely distributed under the MIT license.
 
 ;(function($){
@@ -182,7 +182,7 @@
 
     if (!isString(selector) && !isFunction(callback) && callback !== false)
       callback = data, data = selector, selector = undefined
-    if (isFunction(data) || data === false)
+    if (callback === undefined || data === false)
       callback = data, data = undefined
 
     if (callback === false) callback = returnFalse
